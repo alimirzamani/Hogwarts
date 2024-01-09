@@ -16,6 +16,13 @@
 		9FFECC832B4DBC980046174D /* HogwartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC822B4DBC980046174D /* HogwartsUITests.swift */; };
 		9FFECC852B4DBC980046174D /* HogwartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC842B4DBC980046174D /* HogwartsUITestsLaunchTests.swift */; };
 		9FFECC992B4DC0300046174D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC982B4DC0300046174D /* HomeView.swift */; };
+		9FFECC9D2B4DC1020046174D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC9C2B4DC1020046174D /* HTTPMethod.swift */; };
+		9FFECC9F2B4DC1310046174D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC9E2B4DC1310046174D /* Endpoint.swift */; };
+		9FFECCA12B4DC5170046174D /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCA02B4DC5170046174D /* RequestError.swift */; };
+		9FFECCA42B4DC5420046174D /* ResponseValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCA32B4DC5420046174D /* ResponseValidatorProtocol.swift */; };
+		9FFECCA62B4DC5550046174D /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCA52B4DC5550046174D /* ResponseValidator.swift */; };
+		9FFECCAA2B4DC5900046174D /* CustomJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCA92B4DC58F0046174D /* CustomJSONDecoder.swift */; };
+		9FFECCAC2B4DC60E0046174D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCAB2B4DC60E0046174D /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		9FFECC822B4DBC980046174D /* HogwartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsUITests.swift; sourceTree = "<group>"; };
 		9FFECC842B4DBC980046174D /* HogwartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FFECC982B4DC0300046174D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9FFECC9C2B4DC1020046174D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9FFECC9E2B4DC1310046174D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9FFECCA02B4DC5170046174D /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		9FFECCA32B4DC5420046174D /* ResponseValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseValidatorProtocol.swift; sourceTree = "<group>"; };
+		9FFECCA52B4DC5550046174D /* ResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseValidator.swift; sourceTree = "<group>"; };
+		9FFECCA92B4DC58F0046174D /* CustomJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomJSONDecoder.swift; sourceTree = "<group>"; };
+		9FFECCAB2B4DC60E0046174D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +114,8 @@
 			children = (
 				9FFECC922B4DBF0F0046174D /* Modules */,
 				9FFECC912B4DBF050046174D /* App */,
+				9FFECCA72B4DC56C0046174D /* Utilities */,
+				9FFECC9A2B4DC0D80046174D /* Networking */,
 				9FFECC932B4DBF150046174D /* Resources */,
 				9FFECC682B4DBC970046174D /* Preview Content */,
 			);
@@ -187,6 +203,51 @@
 			children = (
 			);
 			path = Character;
+			sourceTree = "<group>";
+		};
+		9FFECC9A2B4DC0D80046174D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECCA22B4DC52A0046174D /* ResponseValidator */,
+				9FFECC9B2B4DC0F40046174D /* Base */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9FFECC9B2B4DC0F40046174D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECC9E2B4DC1310046174D /* Endpoint.swift */,
+				9FFECCA02B4DC5170046174D /* RequestError.swift */,
+				9FFECC9C2B4DC1020046174D /* HTTPMethod.swift */,
+				9FFECCAB2B4DC60E0046174D /* HTTPClient.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9FFECCA22B4DC52A0046174D /* ResponseValidator */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECCA32B4DC5420046174D /* ResponseValidatorProtocol.swift */,
+				9FFECCA52B4DC5550046174D /* ResponseValidator.swift */,
+			);
+			path = ResponseValidator;
+			sourceTree = "<group>";
+		};
+		9FFECCA72B4DC56C0046174D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECCA82B4DC5830046174D /* JSONDecoder */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9FFECCA82B4DC5830046174D /* JSONDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECCA92B4DC58F0046174D /* CustomJSONDecoder.swift */,
+			);
+			path = JSONDecoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,9 +380,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFECCA62B4DC5550046174D /* ResponseValidator.swift in Sources */,
+				9FFECCA12B4DC5170046174D /* RequestError.swift in Sources */,
+				9FFECCA42B4DC5420046174D /* ResponseValidatorProtocol.swift in Sources */,
 				9FFECC6F2B4DBC970046174D /* Hogwarts.xcdatamodeld in Sources */,
 				9FFECC6C2B4DBC970046174D /* Persistence.swift in Sources */,
 				9FFECC992B4DC0300046174D /* HomeView.swift in Sources */,
+				9FFECCAC2B4DC60E0046174D /* HTTPClient.swift in Sources */,
+				9FFECC9D2B4DC1020046174D /* HTTPMethod.swift in Sources */,
+				9FFECCAA2B4DC5900046174D /* CustomJSONDecoder.swift in Sources */,
+				9FFECC9F2B4DC1310046174D /* Endpoint.swift in Sources */,
 				9FFECC632B4DBC950046174D /* HogwartsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
