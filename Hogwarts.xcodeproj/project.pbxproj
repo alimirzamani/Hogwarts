@@ -79,7 +79,7 @@
 		9FFECCBE2B4DD10B0046174D /* WandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandModel.swift; sourceTree = "<group>"; };
 		9FFECCC12B4DD23D0046174D /* SpellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellModel.swift; sourceTree = "<group>"; };
 		9FFECCC32B4DD2FF0046174D /* SpellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRepository.swift; sourceTree = "<group>"; };
-		9FFECCC52B4DD8C10046174D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FFECCC52B4DD8C10046174D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FFECCC62B4DD8F90046174D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,7 +131,6 @@
 		9FFECC612B4DBC950046174D /* Hogwarts */ = {
 			isa = PBXGroup;
 			children = (
-				9FFECCC52B4DD8C10046174D /* Info.plist */,
 				9FFECC922B4DBF0F0046174D /* Modules */,
 				9FFECCAD2B4DCF110046174D /* Data */,
 				9FFECC912B4DBF050046174D /* App */,
@@ -189,6 +188,7 @@
 		9FFECC932B4DBF150046174D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9FFECCC82B4DD9E80046174D /* Info */,
 				9FFECC952B4DBFB20046174D /* CoreData */,
 				9FFECC942B4DBF530046174D /* Assets */,
 			);
@@ -341,6 +341,14 @@
 				9FFECCC12B4DD23D0046174D /* SpellModel.swift */,
 			);
 			path = Spell;
+			sourceTree = "<group>";
+		};
+		9FFECCC82B4DD9E80046174D /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECCC52B4DD8C10046174D /* Info.plist */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -660,7 +668,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Hogwarts/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Hogwarts/Info.plist;
+				INFOPLIST_FILE = Hogwarts/Resources/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -691,7 +699,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Hogwarts/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Hogwarts/Info.plist;
+				INFOPLIST_FILE = Hogwarts/Resources/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
