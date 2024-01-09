@@ -13,7 +13,7 @@ enum SpellEndpoint {
 
 extension SpellEndpoint: Endpoint {
     var baseURL: String {
-        "https://hp-api.onrender.com/api"
+        AppConstants.baseURL
     }
 
     var basePath: String {

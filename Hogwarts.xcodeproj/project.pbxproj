@@ -31,6 +31,7 @@
 		9FFECCBF2B4DD10B0046174D /* WandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCBE2B4DD10B0046174D /* WandModel.swift */; };
 		9FFECCC22B4DD23D0046174D /* SpellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCC12B4DD23D0046174D /* SpellModel.swift */; };
 		9FFECCC42B4DD2FF0046174D /* SpellRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCC32B4DD2FF0046174D /* SpellRepository.swift */; };
+		9FFECCC72B4DD8F90046174D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCC62B4DD8F90046174D /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		9FFECCBE2B4DD10B0046174D /* WandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandModel.swift; sourceTree = "<group>"; };
 		9FFECCC12B4DD23D0046174D /* SpellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellModel.swift; sourceTree = "<group>"; };
 		9FFECCC32B4DD2FF0046174D /* SpellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRepository.swift; sourceTree = "<group>"; };
+		9FFECCC52B4DD8C10046174D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FFECCC62B4DD8F90046174D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		9FFECC612B4DBC950046174D /* Hogwarts */ = {
 			isa = PBXGroup;
 			children = (
+				9FFECCC52B4DD8C10046174D /* Info.plist */,
 				9FFECC922B4DBF0F0046174D /* Modules */,
 				9FFECCAD2B4DCF110046174D /* Data */,
 				9FFECC912B4DBF050046174D /* App */,
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				9FFECC622B4DBC950046174D /* HogwartsApp.swift */,
+				9FFECCC62B4DD8F90046174D /* AppConstants.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -487,6 +492,7 @@
 				9FFECC9F2B4DC1310046174D /* Endpoint.swift in Sources */,
 				9FFECCC42B4DD2FF0046174D /* SpellRepository.swift in Sources */,
 				9FFECC632B4DBC950046174D /* HogwartsApp.swift in Sources */,
+				9FFECCC72B4DD8F90046174D /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +534,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BASE_URL = "https://hp-api.onrender.com/api";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -591,6 +598,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BASE_URL = "https://hp-api.onrender.com/api";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -652,6 +660,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Hogwarts/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hogwarts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -682,6 +691,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Hogwarts/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hogwarts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
