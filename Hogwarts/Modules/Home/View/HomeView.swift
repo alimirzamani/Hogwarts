@@ -28,6 +28,11 @@ struct HomeView: View {
             }
             .listStyle(.grouped)
             .navigationTitle("Hogwarts")
+            .alert("Oops!", isPresented: $viewModel.isAlertShowing) {
+            } message: {
+                Text(viewModel.alert)
+            }
+
         }
     }
 }
