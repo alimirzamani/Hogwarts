@@ -32,6 +32,8 @@
 		9FFECCC22B4DD23D0046174D /* SpellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCC12B4DD23D0046174D /* SpellModel.swift */; };
 		9FFECCC42B4DD2FF0046174D /* SpellRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCC32B4DD2FF0046174D /* SpellRepository.swift */; };
 		9FFECCC72B4DD8F90046174D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCC62B4DD8F90046174D /* AppConstants.swift */; };
+		9FFECCCC2B4DDB080046174D /* HomeView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCCB2B4DDB080046174D /* HomeView-ViewModel.swift */; };
+		9FFECCD02B4DE1300046174D /* CharacterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECCCF2B4DE1300046174D /* CharacterImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		9FFECCC32B4DD2FF0046174D /* SpellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRepository.swift; sourceTree = "<group>"; };
 		9FFECCC52B4DD8C10046174D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FFECCC62B4DD8F90046174D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		9FFECCCB2B4DDB080046174D /* HomeView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-ViewModel.swift"; sourceTree = "<group>"; };
+		9FFECCCF2B4DE1300046174D /* CharacterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 				9FFECCAD2B4DCF110046174D /* Data */,
 				9FFECC912B4DBF050046174D /* App */,
 				9FFECCA72B4DC56C0046174D /* Utilities */,
+				9FFECCCD2B4DE0D90046174D /* Components */,
 				9FFECC9A2B4DC0D80046174D /* Networking */,
 				9FFECC932B4DBF150046174D /* Resources */,
 				9FFECC682B4DBC970046174D /* Preview Content */,
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				9FFECC982B4DC0300046174D /* HomeView.swift */,
+				9FFECCCB2B4DDB080046174D /* HomeView-ViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -351,6 +357,22 @@
 			path = Info;
 			sourceTree = "<group>";
 		};
+		9FFECCCD2B4DE0D90046174D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECCCE2B4DE0F50046174D /* Image */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9FFECCCE2B4DE0F50046174D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECCCF2B4DE1300046174D /* CharacterImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,6 +505,7 @@
 			files = (
 				9FFECCB32B4DCF760046174D /* SpellEndpoint.swift in Sources */,
 				9FFECCA62B4DC5550046174D /* ResponseValidator.swift in Sources */,
+				9FFECCCC2B4DDB080046174D /* HomeView-ViewModel.swift in Sources */,
 				9FFECCA12B4DC5170046174D /* RequestError.swift in Sources */,
 				9FFECCA42B4DC5420046174D /* ResponseValidatorProtocol.swift in Sources */,
 				9FFECC6F2B4DBC970046174D /* Hogwarts.xcdatamodeld in Sources */,
@@ -495,6 +518,7 @@
 				9FFECCAA2B4DC5900046174D /* CustomJSONDecoder.swift in Sources */,
 				9FFECCBF2B4DD10B0046174D /* WandModel.swift in Sources */,
 				9FFECCB62B4DD0660046174D /* CharacterRepository.swift in Sources */,
+				9FFECCD02B4DE1300046174D /* CharacterImage.swift in Sources */,
 				9FFECCC22B4DD23D0046174D /* SpellModel.swift in Sources */,
 				9FFECCBD2B4DD0D80046174D /* URLOptionalWrapper.swift in Sources */,
 				9FFECC9F2B4DC1310046174D /* Endpoint.swift in Sources */,

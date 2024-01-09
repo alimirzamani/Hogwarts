@@ -13,7 +13,8 @@ struct HogwartsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            let repository = CharacterRepository.shared
+            HomeView(viewModel: .init(characterRepository: repository))
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
