@@ -21,7 +21,12 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             List(viewModel.items, id: \.id) { item in
-                HomeItemView(item: item)
+                NavigationLink {
+                    CharacterView(viewModel: .init(item: item))
+                } label: {
+                    HomeItemView(item: item)
+                }
+                .listRowBackground(Color.clear)
             }
             .task {
                 await viewModel.loadData()
@@ -32,7 +37,6 @@ struct HomeView: View {
             } message: {
                 Text(viewModel.alert)
             }
-
         }
     }
 }

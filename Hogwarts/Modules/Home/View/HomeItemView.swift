@@ -32,7 +32,6 @@ struct HomeItemView: View {
                 }
             }
         }
-        .listRowBackground(Color.clear)
     }
 }
 
