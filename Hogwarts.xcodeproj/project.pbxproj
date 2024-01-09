@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9FFECC632B4DBC950046174D /* HogwartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC622B4DBC950046174D /* HogwartsApp.swift */; };
-		9FFECC652B4DBC950046174D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC642B4DBC950046174D /* ContentView.swift */; };
 		9FFECC672B4DBC970046174D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFECC662B4DBC970046174D /* Assets.xcassets */; };
 		9FFECC6A2B4DBC970046174D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFECC692B4DBC970046174D /* Preview Assets.xcassets */; };
 		9FFECC6C2B4DBC970046174D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC6B2B4DBC970046174D /* Persistence.swift */; };
@@ -16,6 +15,7 @@
 		9FFECC792B4DBC980046174D /* HogwartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC782B4DBC980046174D /* HogwartsTests.swift */; };
 		9FFECC832B4DBC980046174D /* HogwartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC822B4DBC980046174D /* HogwartsUITests.swift */; };
 		9FFECC852B4DBC980046174D /* HogwartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC842B4DBC980046174D /* HogwartsUITestsLaunchTests.swift */; };
+		9FFECC992B4DC0300046174D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC982B4DC0300046174D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		9FFECC5F2B4DBC950046174D /* Hogwarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hogwarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFECC622B4DBC950046174D /* HogwartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsApp.swift; sourceTree = "<group>"; };
-		9FFECC642B4DBC950046174D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9FFECC662B4DBC970046174D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FFECC692B4DBC970046174D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FFECC6B2B4DBC970046174D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		9FFECC7E2B4DBC980046174D /* HogwartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HogwartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFECC822B4DBC980046174D /* HogwartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsUITests.swift; sourceTree = "<group>"; };
 		9FFECC842B4DBC980046174D /* HogwartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FFECC982B4DC0300046174D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,9 @@
 		9FFECC612B4DBC950046174D /* Hogwarts */ = {
 			isa = PBXGroup;
 			children = (
-				9FFECC622B4DBC950046174D /* HogwartsApp.swift */,
-				9FFECC642B4DBC950046174D /* ContentView.swift */,
-				9FFECC662B4DBC970046174D /* Assets.xcassets */,
-				9FFECC6B2B4DBC970046174D /* Persistence.swift */,
-				9FFECC6D2B4DBC970046174D /* Hogwarts.xcdatamodeld */,
+				9FFECC922B4DBF0F0046174D /* Modules */,
+				9FFECC912B4DBF050046174D /* App */,
+				9FFECC932B4DBF150046174D /* Resources */,
 				9FFECC682B4DBC970046174D /* Preview Content */,
 			);
 			path = Hogwarts;
@@ -131,6 +129,64 @@
 				9FFECC842B4DBC980046174D /* HogwartsUITestsLaunchTests.swift */,
 			);
 			path = HogwartsUITests;
+			sourceTree = "<group>";
+		};
+		9FFECC912B4DBF050046174D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECC622B4DBC950046174D /* HogwartsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9FFECC922B4DBF0F0046174D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECC962B4DBFF00046174D /* Home */,
+				9FFECC972B4DC0090046174D /* Character */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9FFECC932B4DBF150046174D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECC952B4DBFB20046174D /* CoreData */,
+				9FFECC942B4DBF530046174D /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FFECC942B4DBF530046174D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECC662B4DBC970046174D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9FFECC952B4DBFB20046174D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECC6B2B4DBC970046174D /* Persistence.swift */,
+				9FFECC6D2B4DBC970046174D /* Hogwarts.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9FFECC962B4DBFF00046174D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9FFECC982B4DC0300046174D /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9FFECC972B4DC0090046174D /* Character */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Character;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +321,7 @@
 			files = (
 				9FFECC6F2B4DBC970046174D /* Hogwarts.xcdatamodeld in Sources */,
 				9FFECC6C2B4DBC970046174D /* Persistence.swift in Sources */,
-				9FFECC652B4DBC950046174D /* ContentView.swift in Sources */,
+				9FFECC992B4DC0300046174D /* HomeView.swift in Sources */,
 				9FFECC632B4DBC950046174D /* HogwartsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
