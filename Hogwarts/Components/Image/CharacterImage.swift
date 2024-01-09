@@ -16,10 +16,12 @@ struct CharacterImage: View {
     var body: some View {
         AsyncImage(url: url) { image in
             image
-                .image?.resizable()
+                .resizable()
                 .scaledToFit()
-                .clipShape(.rect(cornerRadius: 8))
+        } placeholder: {
+            Color.gray
         }
+        .clipShape(.rect(cornerRadius: 8))
         .frame(width: 70, height: 100)
     }
 }

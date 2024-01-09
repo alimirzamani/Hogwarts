@@ -21,23 +21,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             List(viewModel.items, id: \.id) { item in
-                HStack {
-                    CharacterImage(url: item.image)
-                    VStack(alignment: .leading, spacing: 20) {
-                        VStack(alignment: .leading) {
-                            Text(item.name)
-                                .font(.headline)
-
-                            if let house = item.house {
-                                Text(house)
-                                    .font(.subheadline)
-                            }
-                        }
-                        Text("Played by \(item.actor ?? "")")
-                            .font(.caption)
-                    }
-                }
-                .listRowBackground(Color.clear)
+                HomeItemView(item: item)
             }
             .task {
                 await viewModel.loadData()

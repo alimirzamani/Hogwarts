@@ -13,7 +13,7 @@ struct CharacterModel: Codable {
     let alternateNames: [String]
     let species: String
     let gender: String
-    @URLOptionalWrapper var house: String?
+    @EmptyStringWrapper var house: String?
     let dateOfBirth: String?
     let yearOfBirth: Int?
     let wizard: Bool
@@ -24,7 +24,7 @@ struct CharacterModel: Codable {
     let patronus: String
     let hogwartsStudent: Bool
     let hogwartsStaff: Bool
-    @URLOptionalWrapper var actor: String?
+    @EmptyStringWrapper var actor: String?
     let alternateActors: [String]
     let alive: Bool
     @URLOptionalWrapper var image: URL?
