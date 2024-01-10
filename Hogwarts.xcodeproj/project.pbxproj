@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F6B77172B4F011800FDC2C4 /* CharacterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B77162B4F011800FDC2C4 /* CharacterRepositoryTests.swift */; };
+		9F6B77192B4F018B00FDC2C4 /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F6B77182B4F018B00FDC2C4 /* characters.json */; };
+		9F6B771B2B4F037E00FDC2C4 /* MockCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B771A2B4F037E00FDC2C4 /* MockCharacterRepository.swift */; };
 		9FFECC632B4DBC950046174D /* HogwartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC622B4DBC950046174D /* HogwartsApp.swift */; };
 		9FFECC672B4DBC970046174D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFECC662B4DBC970046174D /* Assets.xcassets */; };
 		9FFECC6A2B4DBC970046174D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFECC692B4DBC970046174D /* Preview Assets.xcassets */; };
 		9FFECC6C2B4DBC970046174D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC6B2B4DBC970046174D /* Persistence.swift */; };
 		9FFECC6F2B4DBC970046174D /* Hogwarts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC6D2B4DBC970046174D /* Hogwarts.xcdatamodeld */; };
-		9FFECC792B4DBC980046174D /* HogwartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC782B4DBC980046174D /* HogwartsTests.swift */; };
 		9FFECC832B4DBC980046174D /* HogwartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC822B4DBC980046174D /* HogwartsUITests.swift */; };
 		9FFECC852B4DBC980046174D /* HogwartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC842B4DBC980046174D /* HogwartsUITestsLaunchTests.swift */; };
 		9FFECC992B4DC0300046174D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC982B4DC0300046174D /* HomeView.swift */; };
@@ -58,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F6B77162B4F011800FDC2C4 /* CharacterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryTests.swift; sourceTree = "<group>"; };
+		9F6B77182B4F018B00FDC2C4 /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
+		9F6B771A2B4F037E00FDC2C4 /* MockCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterRepository.swift; sourceTree = "<group>"; };
 		9FFECC5F2B4DBC950046174D /* Hogwarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hogwarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFECC622B4DBC950046174D /* HogwartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsApp.swift; sourceTree = "<group>"; };
 		9FFECC662B4DBC970046174D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,7 +70,6 @@
 		9FFECC6B2B4DBC970046174D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9FFECC6E2B4DBC970046174D /* Hogwarts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hogwarts.xcdatamodel; sourceTree = "<group>"; };
 		9FFECC742B4DBC980046174D /* HogwartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HogwartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FFECC782B4DBC980046174D /* HogwartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsTests.swift; sourceTree = "<group>"; };
 		9FFECC7E2B4DBC980046174D /* HogwartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HogwartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFECC822B4DBC980046174D /* HogwartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsUITests.swift; sourceTree = "<group>"; };
 		9FFECC842B4DBC980046174D /* HogwartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -120,6 +124,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F6B77112B4EFF5F00FDC2C4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B77152B4F00AE00FDC2C4 /* Character */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9F6B77152B4F00AE00FDC2C4 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B77182B4F018B00FDC2C4 /* characters.json */,
+				9F6B771A2B4F037E00FDC2C4 /* MockCharacterRepository.swift */,
+				9F6B77162B4F011800FDC2C4 /* CharacterRepositoryTests.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 		9FFECC562B4DBC950046174D = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +188,7 @@
 		9FFECC772B4DBC980046174D /* HogwartsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FFECC782B4DBC980046174D /* HogwartsTests.swift */,
+				9F6B77112B4EFF5F00FDC2C4 /* Repository */,
 			);
 			path = HogwartsTests;
 			sourceTree = "<group>";
@@ -530,6 +552,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6B77192B4F018B00FDC2C4 /* characters.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +603,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FFECC792B4DBC980046174D /* HogwartsTests.swift in Sources */,
+				9F6B77172B4F011800FDC2C4 /* CharacterRepositoryTests.swift in Sources */,
+				9F6B771B2B4F037E00FDC2C4 /* MockCharacterRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
