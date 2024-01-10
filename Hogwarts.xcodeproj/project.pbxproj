@@ -10,6 +10,8 @@
 		9F6B77172B4F011800FDC2C4 /* CharacterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B77162B4F011800FDC2C4 /* CharacterRepositoryTests.swift */; };
 		9F6B77192B4F018B00FDC2C4 /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F6B77182B4F018B00FDC2C4 /* characters.json */; };
 		9F6B771B2B4F037E00FDC2C4 /* MockCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B771A2B4F037E00FDC2C4 /* MockCharacterRepository.swift */; };
+		9FD5A3992B4F2518003CF420 /* Favorite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5A3972B4F2518003CF420 /* Favorite+CoreDataClass.swift */; };
+		9FD5A39A2B4F2518003CF420 /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5A3982B4F2518003CF420 /* Favorite+CoreDataProperties.swift */; };
 		9FFECC632B4DBC950046174D /* HogwartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFECC622B4DBC950046174D /* HogwartsApp.swift */; };
 		9FFECC672B4DBC970046174D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFECC662B4DBC970046174D /* Assets.xcassets */; };
 		9FFECC6A2B4DBC970046174D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFECC692B4DBC970046174D /* Preview Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		9F6B77162B4F011800FDC2C4 /* CharacterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryTests.swift; sourceTree = "<group>"; };
 		9F6B77182B4F018B00FDC2C4 /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
 		9F6B771A2B4F037E00FDC2C4 /* MockCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterRepository.swift; sourceTree = "<group>"; };
+		9FD5A3972B4F2518003CF420 /* Favorite+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9FD5A3982B4F2518003CF420 /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9FFECC5F2B4DBC950046174D /* Hogwarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hogwarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFECC622B4DBC950046174D /* HogwartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsApp.swift; sourceTree = "<group>"; };
 		9FFECC662B4DBC970046174D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -241,6 +245,8 @@
 		9FFECC952B4DBFB20046174D /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				9FD5A3972B4F2518003CF420 /* Favorite+CoreDataClass.swift */,
+				9FD5A3982B4F2518003CF420 /* Favorite+CoreDataProperties.swift */,
 				9FFECC6B2B4DBC970046174D /* Persistence.swift */,
 				9FFECC6D2B4DBC970046174D /* Hogwarts.xcdatamodeld */,
 			);
@@ -571,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FFECCB32B4DCF760046174D /* SpellEndpoint.swift in Sources */,
+				9FD5A39A2B4F2518003CF420 /* Favorite+CoreDataProperties.swift in Sources */,
 				9FFECCA62B4DC5550046174D /* ResponseValidator.swift in Sources */,
 				9FFECCCC2B4DDB080046174D /* HomeView-ViewModel.swift in Sources */,
 				9FFECCA12B4DC5170046174D /* RequestError.swift in Sources */,
@@ -592,6 +599,7 @@
 				9FFECCC22B4DD23D0046174D /* SpellModel.swift in Sources */,
 				9FFECCBD2B4DD0D80046174D /* URLOptionalWrapper.swift in Sources */,
 				9FFECCDC2B4DEA5E0046174D /* CharacterView-ViewModel.swift in Sources */,
+				9FD5A3992B4F2518003CF420 /* Favorite+CoreDataClass.swift in Sources */,
 				9FFECC9F2B4DC1310046174D /* Endpoint.swift in Sources */,
 				9FFECCC42B4DD2FF0046174D /* SpellRepository.swift in Sources */,
 				9FFECC632B4DBC950046174D /* HogwartsApp.swift in Sources */,
